@@ -13,7 +13,7 @@ class Libtorch < Formula
     include.install "include/pybind11" => "pybind11"
     include.install "include/TH" => "TH"
     include.install "include/torch" => "torch"
-    lib.install "lib" => "lib"
+    lib.install "lib"
     bin.install "bin"
   end
 end
