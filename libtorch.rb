@@ -7,6 +7,12 @@ class Libtorch < Formula
   bottle :unneeded
 
   def install
-    bin.install "libtorch"
+    include.install "include/ATen" => "ATen"
+    include.install "include/c10" => "c10"
+    include.install "include/caffe2" => "caffe2"
+    include.install "include/pybind11" => "pybind11"
+    include.install "include/TH" => "TH"
+    include.install "include/torch" => "torch"
+    bin.install "bin"
   end
 end
