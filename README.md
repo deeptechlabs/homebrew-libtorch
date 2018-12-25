@@ -1,3 +1,6 @@
 # Libtorch Package Homebrew
 
-By Dendi Suhubdy
+```bash
+brew tap suhubdy/libtorch
+brew install libtorch
+```

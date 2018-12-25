@@ -25,8 +25,6 @@ class Libtorch < Formula
     lib.install "lib/libcpuinfo.a"
     lib.install "lib/libgtest.a"
     lib.install "lib/libgtest_main.a"
-    #lib.install "lib/libmkldnn.0.14.0.dylib"
-    #lib.install "lib/libmkldnn.0.dylib"
     lib.install "lib/libmkldnn.dylib"
     lib.install "lib/libnnpack.a"
     lib.install "lib/libnnpack_reference_layers.a"
@@ -35,14 +33,14 @@ class Libtorch < Formula
     lib.install "lib/libonnxifi.dylib"
     lib.install "lib/libonnxifi_dummy.dylib"
     lib.install "lib/libonnxifi_loader.a"
-    #lib.install "lib/libprotobuf-lite.a"
-    #lib.install "lib/libprotobuf.a"
-    #lib.install "lib/libprotoc.a"
     lib.install "lib/libpthreadpool.a"
     lib.install "lib/libqnnpack.a"
     lib.install "lib/libshm.dylib"
     lib.install "lib/libtorch.1.dylib"
     lib.install "lib/libtorch.dylib"
     lib.install "lib/libtorch_python.dylib"
+  end
+  test do
+    system "false"
   end
 end
